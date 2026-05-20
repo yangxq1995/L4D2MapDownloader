@@ -50,7 +50,7 @@
 
 ```
 L4D2MapDownloader/
-├── map_downloader.py          # 主程序（GUI 版）
+├── L4D2MapDownloader.py          # 主程序（GUI 版）
 ├── config.json               # 配置文件（窗口位置、搜索历史）
 ├── download.ico             # 程序图标
 ├── steamcmd/                # SteamCMD 工具目录（自动下载）
@@ -59,7 +59,7 @@ L4D2MapDownloader/
 │   └── userdata/           # 用户数据（下载的地图）
 ├── logs/                    # 运行日志目录
 │   └── 运行日志_YYYYMMDD_HHMMSS.txt
-└── [lwyxb]三方图下载器v2.0.exe  # 已打包版本（可选）
+└── L4D2MapDownloader v2.0.exe  # 已打包版本（可选）
 ```
 
 ---
@@ -93,10 +93,10 @@ pip install pymysql requests
 ### 1. 启动程序
 
 ```bash
-python map_downloader.py
+python L4D2MapDownloader.py
 ```
 
-或双击已打包的 `[lwyxb]三方图下载器v2.0.exe`（如果已生成）。
+或双击已打包的 `L4D2MapDownloader v2.0.exe`（如果已生成）。
 
 ### 2. 搜索地图
 
@@ -139,7 +139,7 @@ python map_downloader.py
 
 ### 数据库配置（代码中）
 
-在 `map_downloader.py` 中修改：
+在 `L4D2MapDownloader.py` 中修改：
 
 ```python
 DB_CONFIG = {
@@ -227,7 +227,7 @@ pip install pymysql
 
 ```bash
 pip install pyinstaller
-pyinstaller --onefile --windowed --icon=download.ico map_downloader.py
+pyinstaller --onefile --windowed --icon=download.ico L4D2MapDownloader.py
 ```
 
 ---
